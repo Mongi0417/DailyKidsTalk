@@ -36,7 +36,7 @@ google-services.json
 # Android Profiling
 *.hprof
 
-### Android Patch ###
+### Android Patch ###git r
 gen-external-apklibs
 
 # Replacement of .externalNativeBuild directories introduced
