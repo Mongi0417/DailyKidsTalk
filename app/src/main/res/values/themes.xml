@@ -1,5 +1,17 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Base.Theme.DailyKidsTalk" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item> <!-- 대표 색상 -->
+        <item name="colorPrimaryVariant">@color/yellow</item> <!-- 다크 모드 대표 색상 -->
+        <item name="colorOnPrimary">@color/white</item> <!-- 대표 색상 적용된 요소 위에 있는 요소(글자 등)의 색상 -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item> <!-- 스위치 등의 활성 색상 -->
+        <item name="colorSecondaryVariant">@color/yellow</item> <!-- 다크 모드 활성 색상 -->
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/yellow</item> <!-- 상태바 색상 -->
+        <item name="colorAccent">@color/yellow</item> <!-- 라디오 버튼, 체크 박스 등의 UI 컨트롤 색상 -->
+        <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.DailyKidsTalk" parent="Base.Theme.DailyKidsTalk"/>
