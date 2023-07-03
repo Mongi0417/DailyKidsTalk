@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginBinding.loginBtnLogin.setOnClickListener(this);
         loginBinding.loginBtnSignUp.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View view) {
         Intent intent;
@@ -39,13 +40,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String email = loginBinding.loginEdtEmail.getText().toString();
             String password = loginBinding.loginEdtPassword.getText().toString();
             if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) { // 공백이 존재하지 않을 때
-                if (loginViewModel.canLogin(email, password)) { // 계정이 존재한다면,
+                if (loginViewModel.canLogin(email, password)) { // 계정이 존재한다면
                     intent = new Intent(this, HomeActivity.class);
                     startActivity(intent);
                     finish();
                 } else
                     Toast.makeText(this, "이메일 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
-            } else // 공백이 존재할 때
+            } else // 입력란이 공백일 때
                 Toast.makeText(this, "이메일과 비밀번호를 입력해 주세요.", Toast.LENGTH_SHORT).show();
         } else { // 회원 가입 버튼을 누를 시
             intent = new Intent(this, SignUpActivity.class);
