@@ -4,4 +4,12 @@
     <string name="sign_up">회원 가입</string>
     <string name="email">이메일</string>
     <string name="password">비밀번호</string>
+    <string name="check_match_password">비밀번호 확인</string>
+    <string name="nickname">닉네임</string>
+    <string name="check">중복 확인</string>
+    <string name="teacher">교사</string>
+    <string name="parent">학부모</string>
+    <string name="next">다음</string>
+    <string name="password_length">6자 이상으로 입력해 주세요.</string>
+    <string name="select_picture">사진 선택</string>
 </resources>
