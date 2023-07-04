@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/sign_up_edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <android.widget.Button
+        android:id="@+id/sign_up_btnCheckEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_white_yellow"
+        android:text="@string/check"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/sign_up_edtEmail"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toEndOf="@id/sign_up_edtEmail"
+        app:layout_constraintTop_toTopOf="@id/sign_up_edtEmail"
+        app:layout_constraintWidth_percent="0.15"/>
+
+    <TextView
+        android:id="@+id/sign_up_tvCheckEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtEmail"/>
+
+    <EditText
+        android:id="@+id/sign_up_edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tvCheckEmail"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/sign_up_tvPasswordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/password_length"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtPassword"/>
+
+    <EditText
+        android:id="@+id/sign_up_edtCheckPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="@string/check_match_password"
+        android:inputType="textPassword"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@id/sign_up_edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tvPasswordLength"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/sign_up_tvCheckPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/sign_up_edtCheckPassword"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_edtCheckPassword"/>
+
+    <EditText
+        android:id="@+id/sign_up_edtNickname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="@string/nickname"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@id/sign_up_edtCheckPassword"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_tvCheckPassword"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <android.widget.Button
+        android:id="@+id/sign_up_btnCheckNickname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_white_yellow"
+        android:text="@string/check"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/sign_up_edtNickname"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toEndOf="@id/sign_up_edtNickname"
+        app:layout_constraintTop_toTopOf="@id/sign_up_edtNickname"
+        app:layout_constraintWidth_percent="0.15"/>
+
+    <TextView
+        android:id="@+id/sign_up_tvCheckNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/sign_up_edtNickname"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_edtNickname"/>
+
+    <RadioGroup
+        android:id="@+id/sign_up_rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_tvCheckNickname">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacher"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parent"/>
+    </RadioGroup>
+
+    <android.widget.Button
+        android:id="@+id/sign_up_btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/yellow"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_rdGroup"
+        app:layout_constraintWidth_percent="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
