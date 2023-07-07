@@ -12,4 +12,14 @@
     <string name="next">다음</string>
     <string name="password_length">6자 이상으로 입력해 주세요.</string>
     <string name="select_picture">사진 선택</string>
+    <string name="daily_notice">알림장</string>
+    <string name="album">앨범</string>
+    <string name="shuttle">셔틀버스</string>
+    <string name="search_kinder">유치원 검색</string>
+    <string name="calendar">일정표</string>
+    <string name="post">학부모게시판</string>
+    <string name="daily">관찰일지</string>
+    <string name="menu">식단표</string>
+    <string name="notice">공지사항</string>
+    <string name="chat_list">채팅방 목록</string>
 </resources>
