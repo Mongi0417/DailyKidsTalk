@@ -8,7 +8,7 @@ public class SignUpViewModel extends ViewModel {
 
     public SignUpViewModel() {
     }
-
+    
     public boolean hasDuplicateEmail() {
 
         return hasDuplicateEmail;
@@ -17,5 +17,10 @@ public class SignUpViewModel extends ViewModel {
     public boolean hasDuplicateNickname() {
 
         return hasDuplicateNickname;
+    }
+
+    private boolean checkDuplicateEmail() {
+
+        return true;
     }
 }
