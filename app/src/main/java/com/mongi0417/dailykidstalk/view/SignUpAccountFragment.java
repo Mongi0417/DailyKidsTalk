@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.mongi0417.dailykidstalk.R;
 import com.mongi0417.dailykidstalk.databinding.FragmentSignUpAccountBinding;
 import com.mongi0417.dailykidstalk.viewmodel.SignUpViewModel;
 
@@ -30,13 +31,13 @@ public class SignUpAccountFragment extends Fragment implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == signUpAccountBinding.signUpBtnCheckEmail.getId()) { // 이메일 중복 검사
             if(signUpViewModel.hasDuplicateEmail())
-                Toast.makeText(getActivity(), "중복된 이메일이 존재합니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.duplicate_email, Toast.LENGTH_SHORT).show();
             else {
 
             }
         } else if (view.getId() == signUpAccountBinding.signUpBtnCheckNickname.getId()) { // 닉네임 중복 검사
             if(signUpViewModel.hasDuplicateNickname())
-                Toast.makeText(getActivity(), "중복된 닉네임이 존재합니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.duplicate_nickname, Toast.LENGTH_SHORT).show();
             else {
 
             }
